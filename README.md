@@ -92,3 +92,13 @@ Page<User> findBySalaryBetween(Double minSalary, Double maxSalary, Pageable page
 
 Page<User> findByNameContainingIgnoreCase(String name, Pageable pageable);
 ```
+```get
+http://localhost:8080/users/page
+http://localhost:8080/users/page?page=2
+http://localhost:8080/users/page?page=0&size=12&sort=name,salary,asc
+http://localhost:8080/users/search-salary?minSalary=5000&maxSalary=10000
+http://localhost:8080/users/search-name?name=maria
+```
+```video
+https://www.youtube.com/watch?v=jh_T5_o3qKE
+```
